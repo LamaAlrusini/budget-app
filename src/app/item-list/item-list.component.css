@@ -1,0 +1,50 @@
+.budget-items-section {
+    display: flex;
+    padding: 50px;
+
+    
+    justify-content: center;
+    align-items: center;
+    
+    .budget-items-container {
+        display: flex;
+        max-width: 680px;
+        height: 100%;
+        width: 100%;
+
+        .income-column, .expenses-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0;
+            flex-grow: 1;
+
+            .budget-items {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+        }
+        .income-column {
+            margin-right: 35px;
+
+            .income-header {
+                color: limegreen;
+            }
+        }
+
+        .expenses-column {
+
+            .expense-header {
+                color: 	orangered;
+            }
+        }
+    }
+}
+
+.header {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-weight:600;
+}

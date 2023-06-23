@@ -1,0 +1,21 @@
+<div class="root mt-2">
+    <div [ngClass]="cardRowClass " (click)="handleClickedItemButton(budgetItem)" class="budget-item">
+        <div [ngClass]="cardBodyClass">
+            <div class="row">
+                <div class="col-9 description ">
+                    <p class="card-text">{{budgetItem.description}} </p>
+                </div>
+                <div class="col-3 ms-auto " >
+                    <div [ngClass]="cardBadgeClass" style="white-space: normal; word-break: break-word;">{{budgetItem.amount}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="x-icon-button" (click)="handleDeleteItem(budgetItem.id)"></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace();
+</script>

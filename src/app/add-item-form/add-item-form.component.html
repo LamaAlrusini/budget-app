@@ -1,0 +1,27 @@
+<form>
+    <div class="field">
+        <div class="field-body">
+            <form>
+                <div class="row">
+                    <div class="col-3">
+                        <p class="control">
+                            <input type="number" name="amount" class="form-control" placeholder="amount"
+                            [(ngModel)]="budgetItem.amount" >
+                        </p>
+                        
+                    </div>
+                    <div class="col">
+                        <p class="control">
+                            <input type="text" name="description" class="form-control" placeholder="description"
+                            [(ngModel)]="budgetItem.description" >
+                        </p>
+                        
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" (click)="onSubmit()" [disabled]="budgetItem.description === '' || budgetItem.amount==null" class="btn btn-outline-dark mb-2">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</form>
