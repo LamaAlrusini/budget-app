@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-header">
+        <h4>Edit</h4>
+      </div>
+    <div class="card-body">
+        <app-add-item-form (closeDialog)="closeDialog()" [budgetItemId]="updatedBudgetItem.id" [isUpdate]="true" [budgetItem]="updatedBudgetItem"></app-add-item-form>
+    </div>
+</div>
